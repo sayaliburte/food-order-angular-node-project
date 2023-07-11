@@ -7,7 +7,7 @@ export const sample_food: Food[] = [{
     tag: ['Pizza','Cheese','Spicy'],
     favourite: true,
     stars: 5,
-    imageUrl: 'assets/Pizza',
+    imageUrl: 'assets/Pizza.jpg',
     origin: ['Italy'],
     cookTime: '10-20mins'
   },
@@ -18,7 +18,7 @@ export const sample_food: Food[] = [{
     tag: ['Burger','Cheese','Spicy'],
     favourite: false,
     stars: 3,
-    imageUrl: 'assets/Burger',
+    imageUrl: 'assets/Burger.jpg',
     origin: ['Italy'],
     cookTime: '10-20mins'
   },
@@ -29,7 +29,7 @@ export const sample_food: Food[] = [{
     tag: ['Sizzlers','Cheese','Spicy'],
     favourite: true,
     stars: 5,
-    imageUrl: 'assets/Sizzlers',
+    imageUrl: 'assets/Sizzlers.jpg',
     origin: ['Italy'],
     cookTime: '10-20mins'
   },
@@ -40,8 +40,8 @@ export const sample_food: Food[] = [{
     tag: ['Paneer Roll','Cheese','Spicy'],
     favourite: true,
     stars: 5,
-    imageUrl: 'assets/PaneerRoll',
-    origin: ['Italy'], 
+    imageUrl: 'assets/PaneerRoll.jpg',
+    origin: ['Italy'],
     cookTime: '10-20mins'
   }
 ]
