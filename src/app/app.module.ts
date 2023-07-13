@@ -7,22 +7,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RatingModule } from 'ng-starrating';
+import { SearchComponent } from './components/search/search.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  exports:[
-    MatButtonModule
-  ],
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RatingModule
+    RatingModule,
+    FormsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
+  ],
+  exports:[
+
   ],
   providers: [],
   bootstrap: [AppComponent]

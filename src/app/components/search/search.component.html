@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <form class="row search-container"  >
+        <mat-form-field class="col-md-6 col-12 " appearance="outline">
+          <mat-label>Search Food</mat-label>
+          <input
+            matInput
+            name="search"
+            type="text"
+            autocomplete="off"
+            #s
+            (keyup.enter)="search(s.value)"
+            [value]="searchTerm"
+          />
+        </mat-form-field>
+        <button mat-raised-button color="warn"  class="col-md-2 col-3" (click)="search(s.value)">Search</button>
+      </form>
+
+      <!-- <button class="col-3" (click)="search(s.value)">Search</button> -->
+    </div>
+  </div>
+</div>
