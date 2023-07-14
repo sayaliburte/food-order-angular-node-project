@@ -9,7 +9,7 @@ import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
-   HomeComponent
+   
   ],
   imports: [
     CommonModule

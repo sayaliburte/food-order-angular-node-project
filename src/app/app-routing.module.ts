@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { FoodDetailsPageComponent } from './pages/food-details-page/food-details-page.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,15 @@ const routes: Routes = [
   {
      path:'search/:searchTerm',
      component: HomeComponent
-  }
+  },
+  {
+    path:'tag/:tag',
+    component: HomeComponent
+ },
+  {
+    path:'food/:id',
+    component: FoodDetailsPageComponent
+ }
 ];
 
 @NgModule({

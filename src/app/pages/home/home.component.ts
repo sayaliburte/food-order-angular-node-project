@@ -18,8 +18,11 @@ export class HomeComponent implements OnInit {
       if(params['searchTerm']){
 
         this.foods = this.foodService.getAllFoodyBySearchTerm(params['searchTerm']);
-        
-      }else{
+
+      }else if(params['tag']){
+        this.foods = this.foodService.getFoodByTagName(params['tag']);
+      }
+      else{
         this.foods = this.foodService.getAll();
       }
     })
