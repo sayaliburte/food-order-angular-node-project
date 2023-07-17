@@ -1,6 +1,6 @@
-<div class="container ">
+<div class="container">
   <div class="">
-    <div class=" food-container">
+    <div class="food-container">
       <img [src]="food.imageUrl" [alt]="food.name" />
       <div class="details">
         <div class="header">
@@ -25,7 +25,9 @@
           </span>
         </div>
         <div class="tags">
-          <a *ngFor="let tag of food.tag" routerLink="/tag/{{ tag }}">{{tag}}</a>
+          <a *ngFor="let tag of food.tag" routerLink="/tag/{{ tag }}">{{
+            tag
+          }}</a>
         </div>
         <div class="cook-time">
           <span>
@@ -37,7 +39,9 @@
             {{ food.price | currency }}
           </span>
         </div>
-        <button mat-raised-button color="warn"  class="col-md-2 col-3 mt-1">Add to Cart</button>
+        <button mat-raised-button color="warn" class="col-md-2 col-3 mt-1" (click)="addToCart()">
+          Add to Cart
+        </button>
       </div>
     </div>
   </div>

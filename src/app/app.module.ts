@@ -13,6 +13,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FoodDetailsPageComponent } from './pages/food-details-page/food-details-page.component';
 import { TagsComponent } from './components/tags/tags.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TagsComponent } from './components/tags/tags.component';
     HomeComponent,
     SearchComponent,
     FoodDetailsPageComponent,
-    TagsComponent
+    TagsComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,
