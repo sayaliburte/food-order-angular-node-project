@@ -59,7 +59,7 @@ export class CartService {
     this.cartSubject.next(this.cart);
   }
 
-  private setCartFromLocalStorage(): Cart {
+  private getCartFromLocalStorage(): Cart {
     const cart = localStorage.getItem('Cart');
     return cart ? JSON.parse(cart) : new Cart();
   }

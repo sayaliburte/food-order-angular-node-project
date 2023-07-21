@@ -1,0 +1,107 @@
+.cartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.5rem;
+  align-items: flex-start;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex: 3 0;
+    justify-content: space-evenly;
+    border: 1px solid #ffbbbb;
+    list-style: none;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    padding: 0;
+
+    ul li:last-child {
+      border: none;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #e4e4e4;
+      padding: 2rem;
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 100rem;
+        object-fit: cover;
+      }
+
+      // div {
+      //   padding: 1rem;
+      // }
+    //   div:not(:first-child) {
+    //     flex-basis: 18%;
+    //   }
+        .remove-item{
+            border-radius: 0.5rem;
+            outline: none;
+            opacity: 1;
+        }
+        .remove-item:hover{
+          opacity: 0.9;
+        }
+     }
+  }
+  .checkout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 3;
+    border: 1px solid #ffbbbb;
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    align-items: center;
+
+    div{
+      font-size: 1.4rem;
+      margin: 1rem;
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .foods-count{
+        margin-bottom: 1.5rem;
+
+      }
+      .foods-count::before{
+        content:"Count:";
+        color: #e72929;
+      }
+
+
+      .total-price::before{
+        color: #e72929;
+        content:"Price: ";
+      }
+
+    }
+    a{
+      padding: 1rem;
+      color: white;
+      background-color: #e72929;
+      display: block;
+      width: 99%;
+      border-radius: 1rem;
+      opacity: 0.7;
+      text-align: center;
+      justify-self: center;
+      text-decoration: none;
+
+    }
+    a:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

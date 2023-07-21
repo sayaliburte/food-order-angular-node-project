@@ -14,7 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FoodDetailsPageComponent } from './pages/food-details-page/food-details-page.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
-
+import { TitleComponent } from './components/title/title.component';
+import {MatSelectModule} from '@angular/material/select'
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     SearchComponent,
     FoodDetailsPageComponent,
     TagsComponent,
-    CartPageComponent
+    CartPageComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     MatInputModule,
     MatButtonModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule
   ],
   exports:[
 
