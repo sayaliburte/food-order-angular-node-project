@@ -15,7 +15,8 @@ import { FoodDetailsPageComponent } from './pages/food-details-page/food-details
 import { TagsComponent } from './components/tags/tags.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/title/title.component';
-import {MatSelectModule} from '@angular/material/select'
+import {MatSelectModule} from '@angular/material/select';
+import { NotFoundComponent } from './pages/not-found/not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import {MatSelectModule} from '@angular/material/select'
     FoodDetailsPageComponent,
     TagsComponent,
     CartPageComponent,
-    TitleComponent
+    TitleComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
