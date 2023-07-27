@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { Food } from 'src/app/models/food';
 import { Tag } from 'src/app/models/tag';
 import { FoodService } from 'src/app/services/food.service';
@@ -11,8 +12,13 @@ import { FoodService } from 'src/app/services/food.service';
 export class TagsComponent implements OnInit {
 foods:Food[]=[];
 tags: Tag[] = [];
+private subscriptionList: Subscription[] = [];
   constructor(private foodService: FoodService) {
-    this.tags = foodService.getAllFoodByTag();
+    const subscription = this.foodService.getAllTags().subscribe((response)=>{
+      console.log(response)
+     this.tags = response;
+    });
+    this.subscriptionList.push(subscription);
    }
 
   ngOnInit(): void {

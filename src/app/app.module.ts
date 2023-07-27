@@ -16,7 +16,8 @@ import { TagsComponent } from './components/tags/tags.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { TitleComponent } from './components/title/title.component';
 import {MatSelectModule} from '@angular/material/select';
-import { NotFoundComponent } from './pages/not-found/not-found.component'
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component'
     MatButtonModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule
   ],
   exports:[
 
