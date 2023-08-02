@@ -18,6 +18,9 @@ import { TitleComponent } from './components/title/title.component';
 import {MatSelectModule} from '@angular/material/select';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './pages/login/login.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,10 +31,12 @@ import { HttpClientModule } from '@angular/common/http';
     TagsComponent,
     CartPageComponent,
     TitleComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RatingModule,
@@ -41,7 +46,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatIconModule
+
   ],
   exports:[
 

@@ -1,0 +1,81 @@
+<div class="login-container">
+  <div class="d-flex flex-column flex-1">
+    <div class="row">
+      <div
+        class="col-md-10 d-flex align-items-center justify-content-center flex-1 p-4"
+      >
+        <div class="row">
+          <div class="col-md-12">
+            <mat-card class="card">
+              <mat-card-header>
+                <img src="/assets/food-plate.jpg" alt="" />
+                <mat-card-title>Foody Moody</mat-card-title>
+                <mat-card-subtitle>Sign In</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <form class="row" #AuthForm="ngForm">
+                  <mat-form-field class="col-md-12" appearance="outline">
+                    <mat-label> Your Email Address </mat-label>
+                    <input
+                      matInput
+                      name="email"
+                      type="email"
+                      maxlength="80"
+                      pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+                      [(ngModel)]="auth.emailAddress"
+                      required
+                      #Email="ngModel"
+                    />
+
+                    <mat-error *ngIf="Email.hasError('required')">
+                      Email Address is <strong>required</strong>
+                    </mat-error>
+                    <mat-error *ngIf="Email.hasError('pattern')">
+                      Email Address is <strong>not valid</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <mat-form-field class="col-md-12" appearance="outline">
+                    <mat-label> Your Password </mat-label>
+                    <input
+                      matInput
+                      name="password"
+                      type="{{ show ? 'password' : 'text' }}"
+                      maxlength="13"
+                      minlength="6"
+                      [(ngModel)]="auth.password"
+                      required
+                      #Password="ngModel"
+                    />
+                    <mat-icon matSuffix *ngIf="!show" (click)="show = !show"
+                      >visibility_off</mat-icon
+                    >
+                    <mat-icon matSuffix *ngIf="show" (click)="show = !show"
+                      >remove_red_eye</mat-icon
+                    >
+                    <mat-error *ngIf="Password.hasError('required')">
+                      Password is <strong>required</strong>
+                    </mat-error>
+                    <mat-error *ngIf="Password.hasError('pattern')">
+                      Password is <strong>not valid</strong>
+                    </mat-error>
+                  </mat-form-field>
+                  <div class="col-12 col-md-12 mb-3">
+                    <button
+                      mat-raised-button
+                      color="primary"
+                      class="bg-danger w-100"
+                      (click)="login()"
+                      [disabled]="!AuthForm.form.valid"
+                    >
+                      Sign In
+                    </button>
+                  </div>
+                </form>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

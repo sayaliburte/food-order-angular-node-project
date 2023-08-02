@@ -1,0 +1,57 @@
+.header {
+  background: white;
+  position: relative;
+  padding: 0;
+}
+.header .container .list-container {
+  border: 1px solid #452045;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.header .container .list-container a {
+  color: red;
+  text-decoration: none;
+}
+.header .container .list-container a:hover {
+  background-color: #f72929;
+  cursor: pointer;
+  color: white;
+}
+.header .container .list-container a.logo {
+  font-weight: 500;
+  padding: 1rem;
+}
+.header .container .list-container ul {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 0;
+}
+.header .container .list-container ul a {
+  padding: 1rem;
+  display: inline-block;
+}
+.header .container .list-container ul a span {
+  background-color: #ff4dff;
+  color: white;
+  padding: 0.1rem 0.45rem;
+  border-radius: 100rem;
+  font-size: 0.9rem;
+}
+.header .container .list-container ul .menu-container {
+  position: relative;
+}
+.header .container .list-container ul .menu-container .menu {
+  position: absolute;
+  z-index: 1;
+  background-color: whitesmoke;
+  display: none;
+}
+.header .container .list-container ul .menu-container .menu a {
+  width: 100%;
+  min-width: 8rem;
+}
+.header .container .list-container ul .menu-container:hover .menu {
+  display: block;
+}/*# sourceMappingURL=header.css.map */

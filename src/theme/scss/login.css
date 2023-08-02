@@ -1,0 +1,16 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: calc(100vh - 80px);
+}
+.login-container .card {
+  min-width: 20rem;
+}
+.login-container .card img {
+  margin-top: -8rem;
+  position: absolute;
+  right: -4rem;
+  height: 25vh;
+}/*# sourceMappingURL=login.css.map */
